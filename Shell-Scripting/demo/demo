@@ -1,0 +1,299 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  20524 15020 ?        Ss   11:33   0:00 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    11:33   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    11:33   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/0:0H-kblockd]
+root          12  0.0  0.0      0     0 ?        I    11:33   0:01 [kworker/u32:0-btrfs-endio-meta]
+root          13  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        I    11:33   0:01 [kworker/u32:1-btrfs-endio-meta]
+root          15  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/0]
+root          16  0.1  0.0      0     0 ?        I    11:33   0:03 [rcu_preempt]
+root          17  0.0  0.0      0     0 ?        S    11:33   0:00 [rcub/0]
+root          18  0.0  0.0      0     0 ?        S    11:33   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          19  0.0  0.0      0     0 ?        S    11:33   0:00 [rcu_exp_gp_kthread_worker]
+root          20  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    11:33   0:00 [kprobe-optimizer]
+root          22  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/0]
+root          23  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/1]
+root          25  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/1]
+root          26  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/1]
+root          27  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/1]
+root          29  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/1:0H-i915_cleanup]
+root          30  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/2]
+root          31  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/2]
+root          32  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/2]
+root          33  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/2]
+root          35  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/2:0H-kblockd]
+root          36  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/3]
+root          37  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/3]
+root          38  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/3]
+root          39  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/3]
+root          40  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/3:0-i915-unordered]
+root          41  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/3:0H-i915_cleanup]
+root          42  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/4]
+root          43  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/4]
+root          44  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/4]
+root          45  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/4]
+root          47  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/4:0H-kblockd]
+root          48  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/5]
+root          49  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/5]
+root          50  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/5]
+root          51  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/5]
+root          53  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/5:0H-i915_cleanup]
+root          54  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/6]
+root          55  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/6]
+root          56  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/6]
+root          57  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/6]
+root          59  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/6:0H-i915_cleanup]
+root          60  0.0  0.0      0     0 ?        S    11:33   0:00 [cpuhp/7]
+root          61  0.0  0.0      0     0 ?        S    11:33   0:00 [idle_inject/7]
+root          62  0.0  0.0      0     0 ?        S    11:33   0:00 [migration/7]
+root          63  0.0  0.0      0     0 ?        S    11:33   0:00 [ksoftirqd/7]
+root          65  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/7:0H-kblockd]
+root          66  0.0  0.0      0     0 ?        S    11:33   0:00 [kdevtmpfs]
+root          67  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-inet_frag_wq]
+root          68  0.0  0.0      0     0 ?        I    11:33   0:00 [rcu_tasks_kthread]
+root          69  0.0  0.0      0     0 ?        I    11:33   0:00 [rcu_tasks_rude_kthread]
+root          70  0.0  0.0      0     0 ?        S    11:33   0:00 [kauditd]
+root          71  0.0  0.0      0     0 ?        S    11:33   0:00 [khungtaskd]
+root          72  0.0  0.0      0     0 ?        S    11:33   0:00 [oom_reaper]
+root          73  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-writeback]
+root          75  0.0  0.0      0     0 ?        S    11:33   0:00 [kcompactd0]
+root          76  0.0  0.0      0     0 ?        SN   11:33   0:00 [ksmd]
+root          77  0.0  0.0      0     0 ?        SN   11:33   0:00 [khugepaged]
+root          78  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/2:1-events]
+root          79  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kblockd]
+root          80  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-blkcg_punt_bio]
+root          81  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kintegrityd]
+root          82  0.0  0.0      0     0 ?        S    11:33   0:00 [irq/9-acpi]
+root          84  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/4:1-events]
+root          85  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-tpm_dev_wq]
+root          86  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-ata_sff]
+root          87  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-edac-poller]
+root          88  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-devfreq_wq]
+root          89  0.0  0.0      0     0 ?        S    11:33   0:00 [watchdogd]
+root          90  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-quota_events_unbound]
+root          91  0.0  0.0      0     0 ?        S    11:33   0:00 [irq/121-dmar0-prq]
+root          92  0.0  0.0      0     0 ?        S    11:33   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kthrotld]
+root          94  0.0  0.0      0     0 ?        S    11:33   0:00 [irq/124-pciehp]
+root          95  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-acpi_thermal_pm]
+root          96  0.0  0.0      0     0 ?        S    11:33   0:00 [hwrng]
+root          97  0.0  0.0      0     0 ?        S    11:33   0:00 [scsi_eh_0]
+root          98  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-scsi_tmf_0]
+root         101  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-ipv6_addrconf]
+root         103  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kstrp]
+root         104  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/1:1-events]
+root         110  0.2  0.0      0     0 ?        D<   11:33   0:04 [kworker/u33:0+i915_flip]
+root         111  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/7:1-i915-unordered]
+root         190  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/0:2-events]
+root         191  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-nvme-wq]
+root         192  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-nvme-reset-wq]
+root         193  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-nvme-delete-wq]
+root         194  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-nvme-auth-wq]
+root         195  0.0  0.0      0     0 ?        I    11:33   0:01 [kworker/u32:5-kcryptd-253:0-1]
+root         197  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-ttm]
+root         198  0.0  0.0      0     0 ?        S    11:33   0:00 [card1-crtc0]
+root         199  0.0  0.0      0     0 ?        S    11:33   0:00 [card1-crtc1]
+root         200  0.0  0.0      0     0 ?        S    11:33   0:00 [card1-crtc2]
+root         201  0.0  0.0      0     0 ?        S    11:33   0:00 [card1-crtc3]
+root         202  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/1:1H-kblockd]
+root         205  0.0  0.0      0     0 ?        I    11:33   0:00 [kworker/1:2-events]
+root         215  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/3:1H-i915_cleanup]
+root         220  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/6:1H-kblockd]
+root         267  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/4:1H-kblockd]
+root         380  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kdmflush/253:0]
+root         381  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kcryptd_io-253:0-1]
+root         382  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-kcryptd-253:0-1]
+root         383  0.0  0.0      0     0 ?        S    11:33   0:00 [dmcrypt_write/253:0]
+root         430  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-worker]
+root         431  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-delalloc]
+root         432  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-flush_delalloc]
+root         433  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-cache]
+root         434  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-fixup]
+root         435  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-endio]
+root         436  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-endio-meta]
+root         437  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-rmw]
+root         438  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-endio-write]
+root         439  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-freespace-write]
+root         440  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-delayed-meta]
+root         441  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/R-btrfs-qgroup-rescan]
+root         442  0.0  0.0      0     0 ?        S    11:33   0:00 [btrfs-cleaner]
+root         443  0.0  0.0      0     0 ?        S    11:33   0:01 [btrfs-transaction]
+root         464  0.0  0.0      0     0 ?        I    11:33   0:01 [kworker/u32:6-i915]
+root         467  0.0  0.0      0     0 ?        I<   11:33   0:00 [kworker/0:1H-i915_cleanup]
+root         471  0.0  0.0      0     0 ?        I    11:33   0:01 [kworker/u32:11-kcryptd-253:0-1]
+root         474  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/7:1H-i915_cleanup]
+root         496  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/5:1H-kblockd]
+root         500  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/2:1H-i915_cleanup]
+root         503  0.0  0.0      0     0 ?        S    11:34   0:00 [psimon]
+root         511  0.0  0.3 133984 55920 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd-journald
+root         525  0.0  0.0   9084  4608 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd-userdbd
+root         621  0.0  0.0      0     0 ?        S    11:34   0:00 [psimon]
+systemd+     624  0.0  0.0  24564 15296 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     625  0.0  0.0  85400  7452 ?        Ssl  11:34   0:00 /usr/lib/systemd/systemd-timesyncd
+root         631  0.0  0.0  43072 13728 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd-udevd
+root         633  0.0  0.0      0     0 ?        S    11:34   0:00 [psimon]
+root         700  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/R-cfg80211]
+root         702  0.2  0.0      0     0 ?        S    11:34   0:04 [irq/171-iwlwifi:default_queue]
+root         703  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/172-iwlwifi:queue_1]
+root         704  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/173-iwlwifi:queue_2]
+root         705  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/174-iwlwifi:queue_3]
+root         706  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/175-iwlwifi:queue_4]
+root         707  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/176-iwlwifi:queue_5]
+root         708  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/177-iwlwifi:queue_6]
+root         709  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/178-iwlwifi:queue_7]
+root         710  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/179-iwlwifi:queue_8]
+root         711  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/180-iwlwifi:exception]
+root         713  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/170-SYNA7DAB:00]
+root         717  0.0  0.0      0     0 ?        S    11:34   0:00 [irq/181-mei_me]
+systemd+     719  0.0  0.0   9668  5936 ?        Ss   11:34   0:01 /usr/lib/systemd/systemd-oomd
+root         728  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/R-kmemstick]
+root         735  0.0  0.0      0     0 ?        I<   11:34   0:01 [kworker/u33:1-rb_allocator]
+root         789  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/R-zswap-shrink]
+dbus         794  0.0  0.0   8044  4412 ?        Ss   11:34   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+dbus         796  0.0  0.0   8200  4240 ?        S    11:34   0:00 dbus-broker --log 10 --controller 9 --machine-id 5dd2d279687c4ab09aa3ce5d6f007df2 --max-bytes 536870912 --max-fds 4096 --max-matches 131072 --audit
+root         798  0.0  0.1 346616 26244 ?        Ssl  11:34   0:00 /usr/bin/NetworkManager --no-daemon
+avahi        800  0.0  0.0   6176  4492 ?        Ss   11:34   0:00 avahi-daemon: running [omarchy.local]
+root         801  0.0  0.0  11272  6428 ?        Ss   11:34   0:00 /usr/lib/bluetooth/bluetoothd
+root         803  0.0  0.0 308660  9744 ?        Ssl  11:34   0:00 /usr/lib/boltd
+root         804  0.0  0.0   8648  4520 ?        Ss   11:34   0:00 bash /usr/bin/limine-snapper-watcher
+root         809  0.0  0.0  10400  7952 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd-logind
+polkitd      829  0.0  0.0 382716 10596 ?        Ssl  11:34   0:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+avahi        832  0.0  0.0   6176  1564 ?        S    11:34   0:00 avahi-daemon: chroot helper
+root         859  0.0  0.0   7564  4216 ?        S    11:34   0:00 inotifywait -q -m -e create -e delete --format %e|%f /.snapshots
+root         861  0.0  0.0   8132  2128 ?        S    11:34   0:00 bash /usr/bin/limine-snapper-watcher
+root         879  0.0  0.0 322148 15136 ?        Ssl  11:34   0:00 /usr/lib/upowerd
+root         887  0.0  0.0  20976 13268 ?        Ss   11:34   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root         888  0.0  0.0  22156  8504 ?        Ss   11:34   0:00 /usr/bin/cupsd -l
+root         897  0.0  0.0 308536  9652 ?        Ssl  11:34   0:00 /usr/lib/power-profiles-daemon
+root         898  0.0  0.1 161780 22696 ?        Ssl  11:34   0:00 /usr/bin/sddm
+root         906  0.0  0.1  91364 24600 ?        S    11:34   0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-auth-2ae3fa1a-92d4-427d-9e2c-c0fde2117516 --id 1 --start uwsm start -g -1 -e -D Hyprland hyprland.desktop --user dhruv --autologin
+dhruv        914  0.0  0.0  20216 14132 ?        Ss   11:34   0:00 /usr/lib/systemd/systemd --user
+dhruv        916  0.0  0.0  19460  3736 ?        S    11:34   0:00 (sd-pam)
+dhruv        923  0.0  0.0   7564  3872 ?        Ss   11:34   0:00 /usr/bin/dbus-broker-launch --scope user
+dhruv        924  0.0  0.0   5516  3608 ?        S    11:34   0:00 dbus-broker --log 10 --controller 9 --machine-id 5dd2d279687c4ab09aa3ce5d6f007df2 --max-bytes 100000000000000 --max-fds 25000000000000 --max-matches 5000000000
+dhruv        925  0.0  0.1 106928 17560 ?        Ssl  11:34   0:00 /usr/bin/pipewire
+dhruv        926  0.0  0.2 763008 35772 ?        Ssl  11:34   0:00 /usr/bin/wireplumber
+dhruv        927  0.0  0.0 171720 15968 ?        SLsl 11:34   0:00 /usr/bin/pipewire-pulse
+dhruv        929  0.0  0.0 182192 12180 ?        SLsl 11:34   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+dhruv        938  0.0  0.0   8000  3752 tty1     Ss+  11:34   0:00 /usr/bin/sh /usr/lib/uwsm/signal-handler.sh wayland-session-envelope@hyprland.desktop.target
+root         966  0.0  0.0      0     0 ?        S<   11:34   0:00 [krfcommd]
+dhruv        972  0.0  0.0   5952  2012 ?        Ss   11:34   0:00 waitpid -e 938
+dhruv        973  0.0  0.0  12620  5932 tty1     S+   11:34   0:00 systemctl --user start --wait wayland-session-envelope@hyprland.desktop.target
+dhruv        979  0.0  0.0 168516  6616 ?        Ssl  11:34   0:00 /usr/bin/bt-agent -c NoInputNoOutput
+root         983  0.0  0.0      0     0 ?        I<   11:34   0:00 [kworker/R-USBC000:00-con1]
+dhruv       1028  0.0  0.0  16856  5032 ?        Ssl  11:34   0:00 /usr/bin/start-hyprland
+dhruv       1033  3.3  1.2 1702356 195708 ?      Sl   11:34   1:05 Hyprland --watchdog-fd 4
+dhruv       1076  0.0  0.0 165580  6368 ?        Ssl  11:34   0:00 /usr/lib/dconf-service
+dhruv       1084  0.0  0.0   8136  3812 ?        S    11:34   0:00 /bin/bash /usr/share/omarchy/bin/omarchy-launch-shell
+dhruv       1090  0.0  0.0   8136  5968 ?        S    11:34   0:00 /bin/bash /usr/share/omarchy/bin/omarchy-hyprland-monitor-watch
+dhruv       1091  0.5  2.8 1317400 452720 ?      Sl   11:34   0:10 quickshell -n -p /usr/share/omarchy/shell
+dhruv       1092  0.0  0.3 564684 55216 ?        Sl   11:34   0:01 /usr/bin/python /usr/bin/udiskie --automount --no-notify --no-tray
+dhruv       1098  0.0  0.0      0     0 ?        Z    11:34   0:00 [uwsm-app] <defunct>
+dhruv       1113  0.0  0.3 752208 51324 ?        Sl   11:34   0:00 Xwayland :0 -rootless -core -listenfd 53 -listenfd 54 -displayfd 98 -wm 95
+dhruv       1120  0.0  0.0 380044  7492 ?        Ssl  11:34   0:00 /usr/lib/at-spi-bus-launcher
+dhruv       1133  0.0  0.0   7568  3780 ?        S    11:34   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+dhruv       1134  0.0  0.0   4828  2996 ?        S    11:34   0:00 dbus-broker --log 10 --controller 9 --machine-id 5dd2d279687c4ab09aa3ce5d6f007df2 --max-bytes 100000000000000 --max-fds 6400000 --max-matches 5000000000
+dhruv       1135  0.0  0.0 331152 12496 ?        Ssl  11:34   0:00 /usr/lib/gvfsd
+dhruv       1144  0.0  0.0 398660  9476 ?        Sl   11:34   0:00 /usr/lib/gvfsd-fuse /run/user/1000/gvfs -f
+dhruv       1154  0.0  0.0   9348  5256 ?        Ss   11:34   0:00 systemd-inhibit --what=sleep --mode=delay --who=Omarchy --why=Lock screen before suspend /usr/share/omarchy/bin/omarchy-system-sleep-monitor --inhibited
+dhruv       1160  3.6  2.4 1142648 394764 ?      SLsl 11:34   1:10 /opt/jetbrains-toolbox/jetbrains-toolbox --minimize
+dhruv       1167  0.0  0.0   8136  3872 ?        Ss   11:34   0:00 /bin/bash /usr/bin/omarchy-crash-watch
+dhruv       1171  0.0  0.1 351784 31284 ?        Ssl  11:34   0:01 /usr/bin/fcitx5 --disable notificationitem
+dhruv       1176  0.0  0.1  34524 26060 ?        Ss   11:34   0:00 /usr/bin/python3 /usr/bin/uwsm aux app-daemon
+dhruv       1177  0.0  0.0  94076 14556 ?        S    11:34   0:00 journalctl -f -n 0 -o json MESSAGE_ID=fc2e22bc6ee647b6b90729ab34a250b1
+dhruv       1178  0.0  0.0   8136  2024 ?        S    11:34   0:00 /bin/bash /usr/bin/omarchy-crash-watch
+dhruv       1179  0.0  0.1 591944 19484 ?        Ssl  11:34   0:01 /usr/lib/xdg-desktop-portal
+dhruv       1200  0.0  0.0   8136  3884 ?        S    11:34   0:00 /bin/bash /usr/share/omarchy/bin/omarchy-system-sleep-monitor --inhibited
+dhruv       1203  0.0  0.0   4796  2724 ?        S    11:34   0:00 dbus-monitor --system type='signal',sender='org.freedesktop.login1',interface='org.freedesktop.login1.Manager',member='PrepareForSleep'
+dhruv       1213  0.0  0.0 307692  8604 ?        Ssl  11:34   0:00 /usr/lib/xdg-permission-store
+dhruv       1241  0.0  0.0 555244  9236 ?        Ssl  11:34   0:00 /usr/lib/xdg-document-portal
+root        1259  0.0  0.0   2980  2172 ?        Ss   11:34   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+dhruv       1267  0.0  0.1 527536 26668 ?        Ssl  11:34   0:01 /usr/lib/xdg-desktop-portal-gtk
+root        1338  0.0  0.0 422332 12760 ?        Ssl  11:34   0:00 /usr/bin/thermald --systemd --dbus-enable --adaptive
+dhruv       1342  0.0  0.0 167904  7348 ?        Ssl  11:34   0:00 /usr/lib/at-spi2-registryd --use-gnome-session
+dhruv       1354  0.0  0.1 586812 23380 ?        Ssl  11:34   0:00 /usr/lib/xdg-desktop-portal-hyprland
+dhruv       1447  0.0  0.0   7568  4228 ?        S    11:34   0:00 /usr/bin/inotifywait -m -r -q -e close_write,create,delete,move --format %w%f /home/dhruv/.config/omarchy/plugins
+dhruv       1667  0.0  0.0  14480  5084 ?        S    11:34   0:00 socat -U - UNIX-CONNECT:/run/user/1000/hypr/efb50993780079460b0cbed1363e2166a2de1d9f_1788761045_1753255360/.socket2.sock
+root        1822  0.0  0.1 479712 18060 ?        Ssl  11:34   0:00 /usr/lib/udisks2/udisksd
+dhruv       1922  0.0  0.0   3104  2144 ?        S    11:34   0:00 wl-paste --type text --watch /usr/share/omarchy/shell/plugins/clipboard/capture.sh text
+dhruv       1923  0.0  0.0   3104  2148 ?        S    11:34   0:00 wl-paste --type image/png --watch /usr/share/omarchy/shell/plugins/clipboard/capture.sh image/png
+dhruv       2598  0.1  0.7 34355832 117096 ?     SLl  11:34   0:02 /home/dhruv/.local/share/JetBrains/Daemon/bundles/current/jetbrainsd/bin/jetbrainsd run
+dhruv       2860  0.0  0.0   8136  3952 ?        S    11:35   0:00 /bin/bash /usr/share/omarchy/bin/omarchy-hyprland-monitor-watch
+dhruv       5086 15.0  4.5 12733396 740888 ?     Ssl  11:36   4:32 /opt/zen-browser-bin/zen-bin
+dhruv       5087  0.0  0.0      0     0 ?        Z    11:36   0:00 [uwsm-app] <defunct>
+dhruv       5169  0.0  0.1 575164 30352 ?        S    11:36   0:00 /opt/zen-browser-bin/zen-bin -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {036ce523-3e5c-4a45-b72b-8c96d684eaf9} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 1 forkserver
+dhruv       5186  0.0  0.2 588528 47120 ?        Sl   11:36   0:00 /opt/zen-browser-bin/zen-bin -contentproc -parentBuildID 20260828113729 -prefsHandle 0:39389 -prefMapHandle 1:302304 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {e3ec20a1-eaa3-4885-aa54-267a12d4b4b3} -parentPid 5086 -appDir /opt/zen-browser-bin/browser 2 socket
+dhruv       5208  0.0  0.9 2784352 155864 ?      Sl   11:36   0:01 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:39492 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {b3f647b0-4fd2-4979-a1b5-87559ccf65b1} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 3 tab
+dhruv       5217  0.0  1.1 1306660 190336 ?      Sl   11:36   0:00 /opt/zen-browser-bin/zen-bin -contentproc -parentBuildID 20260828113729 -prefsHandle 0:39492 -prefMapHandle 1:302304 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {54e2bba1-dc78-4d17-8acf-d9ba5bb36370} -parentPid 5086 -appDir /opt/zen-browser-bin/browser 4 rdd
+dhruv       5271  0.0  0.0 169192  8912 ?        Ssl  11:36   0:00 /usr/lib/gvfsd-metadata
+dhruv       5293  0.0  0.7 2775076 114620 ?      Sl   11:36   0:00 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:34266 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {ba046ec5-a7c5-4887-8f43-0b0a79322247} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 5 tab
+dhruv       5431  6.1  5.5 20891824 901740 ?     Sl   11:36   1:51 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:39549 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {fdc18119-18fd-4a19-a9bd-a4d3e54427c5} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 8 tab
+dhruv       5539  0.0  0.5 828840 82884 ?        Sl   11:36   0:00 /opt/zen-browser-bin/zen-bin -contentproc -parentBuildID 20260828113729 -sandboxingKind 0 -prefsHandle 0:54502 -prefMapHandle 1:302304 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {b932760a-198d-48e4-b221-8f18e0a495eb} -parentPid 5086 -appDir /opt/zen-browser-bin/browser 9 utility
+dhruv       6465  0.7  2.5 3246044 407804 ?      Sl   11:36   0:12 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {86d2fecb-f45f-42c5-a65c-1feb3f333b46} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 12 tab
+dhruv       6583  0.3  2.2 3297444 359384 ?      Sl   11:36   0:06 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {68a948c3-e7f9-455e-8ef7-3b9066aed3fb} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 13 tab
+dhruv       6735  6.5  4.3 3757200 708764 ?      Sl   11:36   1:55 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {5192400e-40d3-42e4-8b83-6e9e32f56ec5} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 15 tab
+dhruv       7682  0.3  1.5 3160748 249300 ?      Sl   11:37   0:06 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {bbf7d155-6d42-4634-aa0d-96374bcee333} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 16 tab
+dhruv       8619  1.3  3.1 7669612 512672 ?      Sl   11:37   0:23 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {baa62be5-d998-45b1-8f8f-c01d40f2228d} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 19 tab
+root       12111  0.0  0.0      0     0 ?        I    11:39   0:00 [kworker/5:0]
+dhruv      13252  0.8  2.3 3296308 383904 ?      Sl   11:40   0:13 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49232 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {2da13857-a201-4450-924e-69e28f7697d2} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 25 tab
+root       13487  0.0  0.0      0     0 ?        I    11:40   0:00 [kworker/u32:8-events_unbound]
+root       13970  0.0  0.0      0     0 ?        I    11:40   0:01 [kworker/u32:13-btrfs-endio-meta]
+root       14551  0.0  0.0      0     0 ?        I    11:40   0:00 [kworker/u32:14-events_unbound]
+root       16069  0.0  0.0      0     0 ?        I    11:41   0:00 [kworker/4:2-mm_percpu_wq]
+root       21560  0.0  0.0      0     0 ?        I    11:44   0:00 [kworker/6:1-i915-unordered]
+root       23490  0.0  0.0      0     0 ?        I    11:46   0:00 [kworker/5:1-events]
+dhruv      23946  0.2  0.1 849652 29764 ?        Ss   11:46   0:02 foot --working-directory=/home/dhruv
+dhruv      23977  0.0  0.0  11444 10064 pts/0    Ss   11:46   0:00 /usr/bin/bash
+dhruv      27395  0.1  1.4 2948416 233152 ?      Sl   11:47   0:02 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a5e9a4e0-f797-4800-b0a4-878a38e059d2} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 38 tab
+root       28573  0.0  0.0      0     0 ?        I    11:48   0:00 [kworker/u32:2-kcryptd-253:0-1]
+dhruv      29500  1.8  3.8 3444124 623404 ?      Sl   11:48   0:18 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {49de0cf8-9a4f-481d-a9bc-c13b6754f351} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 41 tab
+root       29640  0.0  0.0      0     0 ?        I    11:48   0:00 [kworker/3:1-i915-unordered]
+dhruv      33280  1.9  2.8 7506224 455032 ?      Sl   11:50   0:18 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {52a14713-f2e8-4201-9b0e-c7b552403644} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 43 tab
+root       35676  0.0  0.0      0     0 ?        I    11:51   0:00 [kworker/0:0-events]
+root       36432  0.0  0.0      0     0 ?        I    11:52   0:00 [kworker/u32:7-btrfs-endio-meta]
+root       37038  0.0  0.0      0     0 ?        I    11:52   0:00 [kworker/7:2]
+root       40943  0.0  0.0      0     0 ?        I    11:54   0:00 [kworker/2:0]
+root       44194  0.0  0.0      0     0 ?        I    11:56   0:00 [kworker/6:0-events]
+dhruv      50724  0.0  0.0 50356764 4928 ?       Sl   11:59   0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/dhruv/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62&iid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62&sid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.135.0 --annotation=lsb-release=Omarchy --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.8.1 --initial-client-fd=48 --shared-client-connection
+dhruv      51099  0.0  0.0 242220  8388 ?        Sl   11:59   0:00 dconf watch /system/proxy/
+root       51223  0.0  0.0      0     0 ?        I    11:59   0:00 [kworker/u32:4-kcryptd-253:0-1]
+root       51320  0.0  0.0      0     0 ?        I<   11:59   0:00 [kworker/u33:2-rb_allocator]
+dhruv      51890  0.0  0.0   3112   972 ?        S    12:00   0:00 wl-copy --type image/png
+dhruv      52634  0.0  0.7 2725672 114120 ?      Sl   12:00   0:00 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {696cb776-ac60-446f-92e2-662197e60bd0} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 48 tab
+root       56264  0.0  0.0      0     0 ?        I    12:02   0:00 [kworker/6:2]
+dhruv      56715  0.0  0.7 2725672 116232 ?      Sl   12:02   0:00 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {46bc301c-c2de-459e-b772-ed90f9986ded} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 49 tab
+dhruv      57456  0.0  0.7 2725672 113924 ?      Sl   12:02   0:00 /opt/zen-browser-bin/zen-bin -contentproc -isForBrowser -prefsHandle 0:49284 -prefMapHandle 1:302304 -jsInitHandle 2:161776 -parentBuildID 20260828113729 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {79e2b431-cc50-49db-a466-1eff0abb16cf} -parentPid 5086 -greomni /opt/zen-browser-bin/omni.ja -appomni /opt/zen-browser-bin/browser/omni.ja -appDir /opt/zen-browser-bin/browser 50 tab
+root       57942  0.0  0.0      0     0 ?        I    12:02   0:00 [kworker/1:0]
+root       62178  0.0  0.0   9740  5540 ?        S    12:04   0:00 systemd-userwork: waiting...
+root       62179  0.0  0.0   9740  5472 ?        S    12:04   0:00 systemd-userwork: waiting...
+root       62180  0.0  0.0   9740  5520 ?        S    12:04   0:00 systemd-userwork: waiting...
+root       62698  0.0  0.0      0     0 ?        I    12:04   0:00 [kworker/2:2]
+root       62827  0.2  0.0      0     0 ?        D<   12:04   0:00 [kworker/u33:3+i915_flip]
+dhruv      62967  2.1  2.1 1520774616 339052 ?   SLsl 12:05   0:01 /usr/share/code/code README.md
+dhruv      63008  0.0  0.3 50921980 62136 ?      S    12:05   0:00 /usr/share/code/code --type=zygote --no-zygote-sandbox
+dhruv      63009  0.0  0.3 50921968 62552 ?      S    12:05   0:00 /usr/share/code/code --type=zygote
+dhruv      63011  0.0  0.0 50921996 13920 ?      S    12:05   0:00 /usr/share/code/code --type=zygote
+dhruv      63028  0.0  0.0 50356764 4956 ?       Sl   12:05   0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/dhruv/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62&iid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62&sid=ba21913e-2ebd-42f5-a63b-2cc41a80ee62 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.135.0 --annotation=lsb-release=Omarchy --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.8.1 --initial-client-fd=48 --shared-client-connection
+dhruv      63048  0.7  2.1 51556168 347272 ?     Sl   12:05   0:00 /usr/share/code/code --type=gpu-process --ozone-platform=wayland --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708988185955192
+dhruv      63051  0.1  0.5 50726532 90584 ?      Sl   12:05   0:00 /usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708989122997041
+dhruv      63081  7.5  2.0 1522655888 335648 ?   Sl   12:05   0:05 /usr/share/code/code --type=renderer --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --max-active-webgl-contexts=32 --ozone-platform=wayland --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1788761030865850 --launch-time-ticks=1872060289 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708990060038890 --vscode-window-config=vscode:7e29d086-63c4-4a85-b026-d0f5ab6d6f74
+dhruv      63110  1.7  1.1 1520406852 178784 ?   Sl   12:05   0:01 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708990997080739
+dhruv      63131  2.4  0.8 1520393056 140776 ?   Sl   12:05   0:01 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708991934122588
+dhruv      63132  0.4  0.8 1520393612 131692 ?   Sl   12:05   0:00 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708992871164437
+dhruv      63133  2.6  1.1 1520395084 193316 ?   Sl   12:05   0:02 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=63028 --enable-crash-reporter=c1b1d741-f912-4803-8779-4bd689e7209e,no_channel --user-data-dir=/home/dhruv/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17984690835449422088,11538924237978519887,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14882659167436080220,3041137978924637469,4 --trace-process-track-uuid=3190708993808206286
+dhruv      63227  1.3  1.7 1518519920 282264 ?   Sl   12:05   0:01 /usr/share/code/code /usr/share/code/resources/app/node_modules.asar.unpacked/@github/copilot-linux-x64/index.js --headless --no-auto-update --log-level info --stdio --no-auto-login
+dhruv      63318  0.3  0.7 1518321228 116536 ?   Sl   12:05   0:00 /usr/share/code/code /usr/share/code/resources/app/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=63133
+dhruv      63350  0.0  0.0 242220  8332 ?        Sl   12:05   0:00 dconf watch /system/proxy/
+root       64280  0.0  0.0      0     0 ?        I<   12:05   0:00 [kworker/u33:4]
+dhruv      66406  0.0  0.0   8140  5932 pts/0    S+   12:06   0:00 /bin/bash ./script.sh
+dhruv      66544  0.0  0.0   6008  4256 ?        S    12:06   0:00 sleep 2
+dhruv      66555  0.0  0.0   9112  6044 pts/0    R+   12:06   0:00 ps aux
