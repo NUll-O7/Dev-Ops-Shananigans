@@ -34,4 +34,5 @@
 
 ### ping google.com
 1. Sends ICMP echo requests to test basic reachability and measure round-trip time. Confirms the destination is up and responding before deeper troubleshooting.
+
 ![ping Output](assets/image7.png)
