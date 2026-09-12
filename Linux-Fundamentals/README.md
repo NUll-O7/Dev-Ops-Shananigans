@@ -1,19 +1,12 @@
-# Linux Fundamentals Homework
+# Linux fundamentals
 
-This is a small practice guide for four Linux topics that come up often in
-day-to-day work and technical interviews.
+This directory is a compact practice guide for links, user creation, systemd journal inspection, and everyday command-line work. Run the examples in a test directory, virtual machine, or disposable account.
 
-Run the commands in a test directory or virtual machine. Commands beginning
-with `sudo` need administrator access.
+Commands beginning with `sudo` need administrator access. Read a command's manual before using it on a machine that matters.
 
 ## 1. Soft links and hard links
 
-A link is another name or path for a file.
-
-### Soft link (symbolic link)
-
-A soft link stores the path to another file. It can point to directories, and
-it can cross filesystems, but it stops working if the original path disappears.
+A symbolic link stores a pathname. It can point to a directory and cross filesystems, but it breaks when its target path disappears:
 
 ```bash
 echo "hello Linux" > original.txt
@@ -23,18 +16,7 @@ ls -l original.txt soft-link.txt
 rm soft-link.txt
 ```
 
-Create one with:
-
-```bash
-ln -s <original> <link-name>
-```
-
-### Hard link
-
-A hard link is another directory entry for the same file data (the same inode).
-Both names keep the data available, so deleting the original name does not
-delete the file. Hard links normally cannot cross filesystems or point to
-directories.
+A hard link is another directory entry for the same inode. Removing one name leaves the data available through the other name:
 
 ```bash
 echo "hello Linux" > original.txt
@@ -45,76 +27,55 @@ cat hard-link.txt
 rm hard-link.txt
 ```
 
-Create one with:
+| Type | Points to | Usually crosses filesystems? | Can target a directory? |
+|---|---|---:|---:|
+| Symbolic link | A pathname | Yes | Yes |
+| Hard link | The same inode/data | No | No |
 
-```bash
-ln <original> <link-name>
-```
+Interview answer: a symbolic link points to a path and can break; a hard link points to the same inode and survives removal of the original name.
 
-### Interview answer
+## 2. `adduser` and `useradd`
 
-“A soft link points to a pathname, so it can break and can cross filesystems.
-A hard link points to the same inode and data, so it survives removal of the
-original name, but it usually cannot cross filesystems or link directories.”
+Both create users, but they serve different workflows:
 
-## 2. `adduser` vs `useradd`
+| Command | Role | Typical use |
+|---|---|---|
+| `adduser` | Interactive distribution wrapper | Creating a normal user on Ubuntu/Debian |
+| `useradd` | Low-level account utility | Scripts and precise account setup |
 
-Both commands create users, but they have different goals:
-
-| Command | What it is | Typical use |
-| --- | --- | --- |
-| `adduser` | Friendly, interactive wrapper | Creating a normal user on Ubuntu/Debian |
-| `useradd` | Low-level system utility | Scripts, automation, and precise account setup |
-
-On Ubuntu, `adduser` is usually the easier choice because it asks sensible
-questions, creates the home directory, and sets up the account with safer
-defaults. Use `useradd` when you specifically need its lower-level options and
-know which defaults you want.
-
-Create a practice user:
+Create and remove a disposable practice account:
 
 ```bash
 sudo adduser homework-user
-```
-
-When finished, remove the practice account and its home directory:
-
-```bash
 sudo deluser --remove-home homework-user
 ```
 
+Check the target account and home directory before removing anything on a real system.
+
 ## 3. `journalctl`
 
-`journalctl` reads logs collected by `systemd-journald`. It is useful for
-checking what happened during boot, investigating errors, and viewing logs for
-a particular service.
-
-Useful examples:
+`journalctl` reads logs collected by `systemd-journald`. These commands cover the common inspection patterns:
 
 ```bash
-# Logs from the current boot
 sudo journalctl -b
-
-# Logs from today
 sudo journalctl --since today
-
-# Logs for a service (SSH is commonly named ssh on Ubuntu)
 sudo journalctl -u ssh
-
-# Recent service logs, newest entries last
 sudo journalctl -u ssh -n 50
-
-# Follow new entries as they arrive
 sudo journalctl -u ssh -f
 ```
 
-If the service name is different, check it with `systemctl list-units --type=service`.
+The SSH unit may be named differently on another distribution. List service units when needed:
+
+```bash
+systemctl list-units --type=service
+```
+
 Press `q` to leave the normal log view and `Ctrl+C` to stop a live view.
 
-## 4. Small command cheat sheet
+## 4. Command reference
 
 | Command | Purpose | Example |
-| --- | --- | --- |
+|---|---|---|
 | `pwd` | Show the current directory | `pwd` |
 | `ls` | List files | `ls -la` |
 | `cd` | Change directory | `cd /var/log` |
@@ -124,10 +85,10 @@ Press `q` to leave the normal log view and `Ctrl+C` to stop a live view.
 | `mv` | Move or rename files | `mv backup.txt old-notes.txt` |
 | `rm` | Delete files | `rm old-notes.txt` |
 | `cat` | Print file contents | `cat notes.txt` |
-| `less` | Read a file one screen at a time | `less /var/log/syslog` |
+| `less` | Read a file by screen | `less /var/log/syslog` |
 | `grep` | Search text | `grep error app.log` |
 | `find` | Find files | `find . -name '*.log'` |
-| `man` | Open a command manual | `man journalctl` |
+| `man` | Open a manual | `man journalctl` |
 | `whoami` | Show the current user | `whoami` |
 | `id` | Show user and group IDs | `id` |
 | `chmod` | Change permissions | `chmod 600 secret.txt` |
@@ -136,5 +97,4 @@ Press `q` to leave the normal log view and `Ctrl+C` to stop a live view.
 | `ps` | Show running processes | `ps aux` |
 | `systemctl` | Manage systemd services | `systemctl status ssh` |
 
-Be especially careful with `rm` and commands run with `sudo`. When unsure,
-read the manual first: `man <command>`.
+Be especially careful with `rm` and commands run with `sudo`.

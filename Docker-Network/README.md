@@ -1,15 +1,24 @@
-# Docker Networking and Volumes Homework
+# Docker networking and volumes
 
-This README contains the commands and verification results for the Docker networking and volume exercises.
+This directory is a guided Docker lab for four concepts that are easy to confuse when learned only from diagrams:
+
+1. Containers on user-defined bridge networks.
+2. A container attached to more than one network.
+3. Host networking.
+4. Bind mounts and overlay networks.
+
+The first three tasks can run on one Docker host. The overlay task needs Docker Swarm and, for the cross-host behavior, at least two Docker hosts.
 
 ## Prerequisites
 
 - Docker Engine is running.
-- Ports `80` and `8080` are available.
+- Ports `80` and `8080` are available for the host-network and bind-mount checks.
+- `curl` is available.
+- Run the overlay section only on a disposable Swarm manager or test cluster.
 
-## Task 1: Container networking
+## Task 1: user-defined networks
 
-Create three networks. The frontend and backend share `frontend-net`; the backend and database share `db-net`; `shared-net` lets the frontend and database communicate directly for the third-network check.
+Create three networks and three containers:
 
 ```bash
 docker network create frontend-net
@@ -27,22 +36,26 @@ docker network connect shared-net homework-frontend
 docker network connect shared-net homework-database
 ```
 
-The backend is attached to two networks:
+The backend is attached to both `frontend-net` and `db-net`:
 
 ```bash
 docker inspect -f '{{json .NetworkSettings.Networks}}' homework-backend
 ```
 
-Check name resolution and connectivity from the frontend and backend containers:
+The frontend and database also share `shared-net`. Inspect network membership and test name resolution from the containers:
 
 ```bash
+docker network inspect frontend-net
+docker network inspect db-net
+docker network inspect shared-net
+
 docker exec homework-frontend ping -c 1 homework-backend
 docker exec homework-frontend ping -c 1 homework-database
 docker exec homework-backend ping -c 1 homework-frontend
 docker exec homework-backend ping -c 1 homework-database
 ```
 
-Expected result: each command ends with `1 packets transmitted, 1 packets received`.
+The expected ping result is one packet received for each check. The commands test Docker's embedded DNS and connectivity between attached containers.
 
 Cleanup:
 
@@ -51,17 +64,15 @@ docker rm -f homework-frontend homework-backend homework-database
 docker network rm frontend-net db-net shared-net
 ```
 
-## Task 2: Host network
+## Task 2: host networking
 
-The official Apache HTTP Server image is `httpd` on Docker Hub.
+The official Apache image is `httpd`. With host networking, Apache binds directly to the host's port `80`; there is no `-p` mapping:
 
 ```bash
 docker pull httpd:2.4
 docker run -d --name homework-apache --network host httpd:2.4
-curl http://localhost:80
+curl -fsS http://localhost:80
 ```
-
-The response contains the Apache test page. With host networking, Apache binds directly to the host's port `80`; there is no Docker port mapping.
 
 Cleanup:
 
@@ -69,9 +80,11 @@ Cleanup:
 docker rm -f homework-apache
 ```
 
-## Task 3: Bind mount
+Host networking reduces isolation and can collide with services already listening on the host. Use it here to observe the difference, not as a default.
 
-The fixture for this task is [`site/index.html`](site/index.html).
+## Task 3: read-only bind mount
+
+The fixture is [`site/index.html`](site/index.html). Start Nginx with the host directory mounted into its document root:
 
 ```bash
 docker run -d --name homework-nginx \
@@ -79,33 +92,32 @@ docker run -d --name homework-nginx \
   --mount type=bind,src="$PWD/site",dst=/usr/share/nginx/html,readonly \
   nginx:alpine
 
-curl http://localhost:8080
+curl -fsS http://localhost:8080
 ```
 
-The response contains `Hello students`.
-
-Modify the host file while the container is running:
+The response contains `Hello students`. Change the host file while the container is running:
 
 ```bash
 printf 'Hello students - updated\n' > site/index.html
-curl http://localhost:8080
+curl -fsS http://localhost:8080
 ```
 
-The updated response appears without restarting the container because the file is bind-mounted from the host.
+The second response changes without rebuilding the image or restarting the container. The mount is read-only from the container's point of view, while the host can still update the source file.
 
 Cleanup:
 
 ```bash
 docker rm -f homework-nginx
+git checkout -- Docker-Network/site/index.html
 ```
 
-## Task 4: Overlay networks
+The last command restores the tracked fixture after the exercise. If the file has unrelated local edits, restore it manually instead of running that command.
 
-An overlay network connects containers running on different Docker hosts. Docker Swarm provides the control plane and distributes the network configuration to participating nodes. Containers on the same overlay network can communicate by service or container name while Docker handles the cross-host routing. See the [Docker overlay network documentation](https://docs.docker.com/engine/network/drivers/overlay/).
+## Task 4: overlay networks
 
-Use overlay networks when a workload is distributed across multiple Docker hosts, such as a Swarm service. A normal bridge network is local to one Docker host, so it cannot provide this cross-host connectivity.
+An overlay network spans Docker hosts through Docker Swarm. A normal bridge network is local to one Docker host.
 
-Run this only on a disposable Docker Swarm manager. The participating hosts must allow TCP `2377`, TCP/UDP `7946`, and UDP `4789` between them:
+Run this only on a disposable Swarm manager:
 
 ```bash
 docker swarm init
@@ -115,14 +127,14 @@ docker service ls
 docker network inspect homework-overlay
 ```
 
-Join another Docker host to the Swarm with the worker command printed by `docker swarm init`, then scale the service to test placement across hosts:
+Join another Docker host with the worker command printed by `docker swarm init`, then scale the service:
 
 ```bash
 docker service scale homework-web=2
 docker service ps homework-web
 ```
 
-The overlay network is created with the `--driver overlay` flag. Swarm nodes exchange the network metadata, and Docker provides the encapsulated cross-host traffic. Remove the lab when finished:
+The nodes must allow TCP `2377`, TCP/UDP `7946`, and UDP `4789` between them. Remove the lab when finished:
 
 ```bash
 docker service rm homework-web
@@ -132,12 +144,12 @@ docker swarm leave --force
 
 ## Verification record
 
-Docker Engine `29.7.2` is available locally. The checks passed for:
+The repository's existing verification record reports successful local checks for:
 
-- Task 1: frontend/backend/database connectivity across the three networks.
-- Task 2: Apache served successfully through host port `80`.
-- Task 3: the updated bind-mounted file was served without restarting Nginx.
+- container connectivity across the user-defined networks;
+- Apache through host port `80`;
+- the bind-mounted file changing without an Nginx restart.
 
-Overlay verification requires a Docker Swarm and, for the cross-host behavior, at least two Docker hosts.
+Overlay verification remains environment-dependent because it needs Swarm and, for cross-host behavior, multiple Docker hosts.
 
-Screenshots should be captured after running each task and added below:
+Related examples: [`Docker/README.md`](../Docker/README.md).
