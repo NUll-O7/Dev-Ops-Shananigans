@@ -6,11 +6,5 @@ on:
       - main
 
 jobs:
-    call-reusable-workflow:
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: ./CI-CD
-        steps:
-            - name: Call Reusable CI-CD Workflow
-              uses: ./.github/workflows/CI-CD.yml
+  call-reusable-workflow:
+    uses: ./.github/workflows/CI-CD.yml

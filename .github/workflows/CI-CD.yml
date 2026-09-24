@@ -1,7 +1,8 @@
 name: Reusable CI-CD Workflow
 
 on:
-  workflow_call: 
+  workflow_call:
+
 jobs:
   ci-cd-job:
     runs-on: ubuntu-latest
