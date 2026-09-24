@@ -15,6 +15,10 @@ The examples are intentionally small. You can read the source, run one command, 
 | Networking | Interface, route, DHCP, DNS, and connectivity commands | [`Networking/README.md`](Networking/README.md) |
 | Shell scripting | A Bash script that records host details and creates a process snapshot | [`Shell-Scripting/README.md`](Shell-Scripting/README.md) |
 | Git/GitHub | Cherry-pick exercise evidence and mock files | [`Github/README.md`](Github/README.md) |
+| Kubernetes fundamentals | Cluster setup and architecture | [`Kubernetes Fundamentals/README.md`](Kubernetes%20Fundamentals/README.md) |
+| Kubernetes core objects | Pods, controllers, rollouts, and troubleshooting | [`Kubernetes Core Objects/README.md`](Kubernetes%20Core%20Objects/README.md) |
+| Kubernetes services | Service types, DNS, and selectors | [`Kubernetes Services/README.md`](Kubernetes%20Services/README.md) |
+| Kubernetes ingress | ConfigMaps, Secrets, Ingress, TLS, and full demo | [`Kubernetes Ingress/README.md`](Kubernetes%20Ingress/README.md) |
 
 ## Prerequisites
 
