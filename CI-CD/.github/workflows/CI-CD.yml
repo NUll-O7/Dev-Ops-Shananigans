@@ -3,7 +3,7 @@ name: Reusable CI-CD Workflow
 on:
   workflow_call: 
 jobs:
-  build-and-test:
+  ci-cd-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
