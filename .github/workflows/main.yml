@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-ci-cd:
-    uses: NUll-O7/Dev-Ops-Shananigans/CI-CD/.github/workflows/CI-CD.yml@main 
+    uses: NUll-O7/CI-CD/.github/workflows/CI-CD.yml@main 
