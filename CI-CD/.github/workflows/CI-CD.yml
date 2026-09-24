@@ -6,9 +6,6 @@ jobs:
   ci-cd-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Run a step
-        run: echo "Executing CI-CD tasks"
       - name: Print message
         run: echo "Hello from GitHub Actions!"
       - name: Show date

@@ -12,6 +12,5 @@ jobs:
             run:
                 working-directory: ./CI-CD
         steps:
-            - uses: actions/checkout@v4
             - name: Call Reusable CI-CD Workflow
               uses: ./.github/workflows/CI-CD.yml
