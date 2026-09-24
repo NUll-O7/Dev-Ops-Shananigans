@@ -1,18 +1,17 @@
-name: Hello GitHub Actions
+name: Reusable CI-CD Workflow
+
 on:
-  push:
-    branches:
-      - main
-      - feature/*
-  workflow_dispatch:
+  workflow_call: 
 jobs:
-  hello:
-    runs-on: arch-latest
+  build-and-test:
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - name: Run a step
+        run: echo "Executing CI-CD tasks"
       - name: Print message
         run: echo "Hello from GitHub Actions!"
       - name: Show date
         run: date
       - name: Show operating system
         run: uname -a
-        

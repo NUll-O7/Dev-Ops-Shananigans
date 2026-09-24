@@ -1,8 +1,10 @@
 name: Main Workflow
+
 on:
-    push:
-        branches:
-        - main
+  push:
+    branches:
+      - main
+
 jobs:
-    call:
-        uses: ./.github/workflows/CI-CD.yml
+  call-ci-cd:
+    uses: NUll-O7/Dev-Ops-Shananigans/CI-CD/.github/workflows/CI-CD.yml@main 
